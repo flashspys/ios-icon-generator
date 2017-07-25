@@ -1,4 +1,4 @@
-# iOS APP ICONS Generator
+# iOS App Icon Generator
 
 ### Description
 ios-icon-generator is a shell script which aim to generate iOS APP icons easier and simply.
