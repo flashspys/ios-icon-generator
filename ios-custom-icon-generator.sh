@@ -29,7 +29,7 @@ SRC_FILE="$1"
 DST_PATH="$2"
 SIZE="$3"
 
-VERSION=1.0.0
+VERSION=2.0.0
 
 info() {
      local green="\033[1;32m"
@@ -57,10 +57,7 @@ DESCRIPTION:
     size - The destination size in pixel, only one number (e.g 60)
 
     This script is depend on ImageMagick. So you must install ImageMagick first
-    You can use 'sudo brew install ImageMagick' to install it
-
-AUTHOR:
-    Alessandro Miliucci<lifeisfoo@gmail.com>
+    You can use 'brew install ImageMagick' to install it
 
 LICENSE:
     This script follow MIT license.

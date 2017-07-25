@@ -55,9 +55,6 @@ DESCRIPTION:
     This script is depend on ImageMagick. So you must install ImageMagick first
     You can use 'brew install ImageMagick' to install it
 
-AUTHOR:
-    Pawpaw<lvyexuwenfa100@126.com>
-
 LICENSE:
     This script follow MIT license.
 
@@ -97,7 +94,7 @@ generate_v8(){
     convert "$SRC_FILE" -resize 152x152 "$DST_PATH/ipad76@2x.png"
     convert "$SRC_FILE" -resize 167x167 "$DST_PATH/ipad83.5@2x.png"
 
-    info 'Generating watch icons.'
+    info 'Generating Apple Watch icons.'
     convert "$SRC_FILE" -resize 48x48 "$DST_PATH/watch-38mm-notification@2x.png"
     convert "$SRC_FILE" -resize 55x55 "$DST_PATH/watch-42mm-notification@2x.png"
     convert "$SRC_FILE" -resize 58x58 "$DST_PATH/watch29-companion@2x.png"
@@ -107,7 +104,7 @@ generate_v8(){
     convert "$SRC_FILE" -resize 172x172 "$DST_PATH/watch-38mm-quickLook@2x.png"
     convert "$SRC_FILE" -resize 196x196 "$DST_PATH/watch-42mm-quickLook@2x.png"
 
-    info 'Generating Store Icons'
+    info 'Generating store Icons'
     convert "$SRC_FILE" -resize 1024x1024 "$DST_PATH/store-ios.png"
     convert "$SRC_FILE" -resize 1024x1024 "$DST_PATH/store-watch.png"
 
@@ -129,6 +126,6 @@ if [ ! -d "$DST_PATH" ];then
     mkdir -p "$DST_PATH"
 fi
 
-    generate_v8
+generate_v8
 
 info 'Generate Done.'
